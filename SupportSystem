@@ -11,10 +11,10 @@ public class SupportSystem {
 
     public void start(){
         boolean finished = false;
-        System.out.println("Welcome to the DodgySoft Technical Support System.");
-        System.out.println("Please tell us about your problem.");
-        System.out.println("We will assist you with any problem you might have.");
-        System.out.println("Please type 'bye' to exit our system.");
+        System.out.println("Selamat datang di Christo Support System.");
+        System.out.println("Silakan ceritakan masalah Anda.");
+        System.out.println("Kami akan membantu dengan masalah apa pun yang Anda miliki.");
+        System.out.println("Ketik 'bye' untuk keluar dari sistem kami.");
 
         while (!finished){
             String input = reader.getInput();
