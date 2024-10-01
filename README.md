@@ -1,5 +1,7 @@
 # Tugas Pertemuan 6 - Tech Support System
 
+![Screenshot 2024-10-01 110152](https://github.com/user-attachments/assets/add9594a-4dc0-4c89-a030-fd751ca26bc6)
+
 ### Penjelasan Keseluruhan Kelas :
 1. `SupportSystem` : Mengelola alur program, memproses input pengguna, dan menampilkan respons.
 2. `InputReader` : Mengambil input dari pengguna melalui konsol.
