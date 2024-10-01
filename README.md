@@ -14,21 +14,21 @@ public class SupportSystem {
     private InputReader reader;
     private Responder responder;
     
-    public SupportSystem() {
+    public SupportSystem(){
         reader = new InputReader();
         responder = new Responder();
     }
 
-    public void start() {
+    public void start(){
         boolean finished = false;
-        System.out.println("Welcome to the DodgySoft Technical Support System.");
-        System.out.println("Please tell us about your problem.");
-        System.out.println("We will assist you with any problem you might have.");
-        System.out.println("Please type 'bye' to exit our system.");
+        System.out.println("Selamat datang di Christo Support System.");
+        System.out.println("Silakan ceritakan masalah Anda.");
+        System.out.println("Kami akan membantu dengan masalah apa pun yang Anda miliki.");
+        System.out.println("Ketik 'bye' untuk keluar dari sistem kami.");
 
-        while (!finished) {
+        while (!finished){
             String input = reader.getInput();
-            if (input.equals("bye")) {
+            if (input.equals("bye")){
                 finished = true;
             } else {
                 String response = responder.generateResponse();
@@ -39,7 +39,7 @@ public class SupportSystem {
         System.out.println("Goodbye! Thank you for using the support system.");
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
         SupportSystem support = new SupportSystem();
         support.start();
     }
@@ -66,11 +66,11 @@ import java.util.Scanner;
 public class InputReader {
     private Scanner scanner;
 
-    public InputReader() {
+    public InputReader(){
         scanner = new Scanner(System.in);
     }
 
-    public String getInput() {
+    public String getInput(){
         System.out.print("> ");
         return scanner.nextLine();
     }
@@ -92,17 +92,17 @@ import java.util.Random;
 public class Responder {
     private String[] responses;
 
-    public Responder() {
-        responses = new String[] {
-            "That sounds interesting. Tell me more...",
-            "Oh, I see. Can you explain further?",
-            "Hmm, that's a tricky one. Let's dive deeper.",
-            "Interesting. Can you give me more details?",
-            "Let me think... Could you clarify a bit more?"
+    public Responder(){
+        responses = new String[]{
+            "Itu terdengar menarik. Ceritakan lebih lanjut...",
+            "Oh, saya mengerti. Bisakah Anda menjelaskan lebih lanjut?",
+            "Hmm, itu cukup rumit. Mari kita bahas lebih dalam.",
+            "Menarik. Bisakah Anda memberikan lebih banyak detail?",
+            "Biarkan saya berpikir... Bisakah Anda memperjelas sedikit lebih banyak?"
         };
     }
 
-    public String generateResponse() {
+    public String generateResponse(){
         Random random = new Random();
         int index = random.nextInt(responses.length);
         return responses[index];
