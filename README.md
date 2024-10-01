@@ -117,4 +117,4 @@ public class Responder {
 3. `generateResponse()` :
 - Membuat objek Random untuk memilih respons secara acak dari array responses.
 - Menghasilkan indeks acak berdasarkan panjang array responses.
-Mengembalikan salah satu kalimat respons berdasarkan indeks yang dihasilkan secara acak.
+- Mengembalikan salah satu kalimat respons berdasarkan indeks yang dihasilkan secara acak.
